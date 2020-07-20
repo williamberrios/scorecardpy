@@ -1215,6 +1215,7 @@ def plot_bin(binx, title, show_iv):
     ax1.set_ylabel('Bin count distribution')
     ax2.set_ylabel('Bad probability', color='blue')
     ax1.set_yticks(np.arange(0, y_left_max+0.2, 0.2))
+    ax1.set_xticklabels(ax1.get_xticklabels(), rotation = 90)
     ax2.set_yticks(np.arange(0, y_right_max+0.2, 0.2))
     ax2.tick_params(axis='y', colors='blue')
     plt.xticks(ind, binx['bin'])
