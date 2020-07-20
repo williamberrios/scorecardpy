@@ -1170,7 +1170,7 @@ def woebin_ply(dt, bins, no_cores=None, print_step=0, replace_blank=True, **kwar
 
 # required in woebin_plot
 #' @import data.table ggplot2
-def plot_bin(binx, title, show_iv):
+def plot_bin(binx, title, show_iv, rot = 0):
     '''
     plot binning of one variable
     
@@ -1215,7 +1215,7 @@ def plot_bin(binx, title, show_iv):
     ax1.set_ylabel('Bin count distribution')
     ax2.set_ylabel('Bad probability', color='blue')
     ax1.set_yticks(np.arange(0, y_left_max+0.2, 0.2))
-    ax1.set_xticklabels(ax1.get_xticklabels(), rotation = 90)
+    ax1.set_xticklabels(ax1.get_xticklabels(), rotation = rot)
     ax2.set_yticks(np.arange(0, y_right_max+0.2, 0.2))
     ax2.tick_params(axis='y', colors='blue')
     plt.xticks(ind, binx['bin'])
@@ -1226,7 +1226,7 @@ def plot_bin(binx, title, show_iv):
     return fig
 
 
-def woebin_plot(bins, x=None, title=None, show_iv=True):
+def woebin_plot(bins, x=None, title=None, show_iv=True,orient = 0):
     '''
     WOE Binning Visualization
     ------
@@ -1287,7 +1287,7 @@ def woebin_plot(bins, x=None, title=None, show_iv=True):
     plotlist = {}
     for i in xs:
         binx = bins[bins['variable'] == i].reset_index()
-        plotlist[i] = plot_bin(binx, title, show_iv)
+        plotlist[i] = plot_bin(binx, title, show_iv ,orient)
     return plotlist
 
 
