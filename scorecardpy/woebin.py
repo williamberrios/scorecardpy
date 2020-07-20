@@ -1218,11 +1218,12 @@ def plot_bin(binx, title, show_iv, rot = 0):
     ax1.set_xticklabels(ax1.get_xticklabels(), rotation = rot)
     ax2.set_yticks(np.arange(0, y_right_max+0.2, 0.2))
     ax2.tick_params(axis='y', colors='blue')
+    ax2.grid(False)
     plt.xticks(ind, binx['bin'])
     plt.title(title_string, loc='left')
     plt.legend((p2[0], p1[0]), ('bad', 'good'), loc='upper right')
     # show plot 
-    # plt.show()
+    plt.show()
     return fig
 
 
