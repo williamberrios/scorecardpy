@@ -1214,7 +1214,7 @@ def plot_bin(binx, title, show_iv, rot = 0):
     # settings
     # Plot the reference bad rate
     bad_rate = np.sum(binx['bad_distr'].values)/(np.sum(binx['good_distr'])+np.sum(binx['bad_distr'].values))
-    ax2.plot(bad_rate.index,bad_rate[col_target]['mean'].values, marker = 'x', color = 'b', linestyle = "solid")
+    ax2.plot(ind,bad_rate[col_target]['mean'].values, marker = 'x', color = 'b', linestyle = "solid")
     ax2.text(ax2.get_xlim()[1]/2, ref + 0.001 , 'Ref: '+ str(np.round(100*bad_rate,2))+ ' %')
     
     ax1.set_ylabel('Bin count distribution')
