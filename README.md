@@ -14,9 +14,9 @@ Its goal is to make the development of traditional credit risk scorecard model e
 - weight of evidence (woe) binning (`woebin`, `woebin_plot`, `woebin_adj`, `woebin_ply`)
 - scorecard scaling (`scorecard`, `scorecard_ply`)
 - performance evaluation (`perf_eva`, `perf_psi`)
-# New:
-# Adding the option for rotate the axes X in bins
-# Adding The bad rate line reference in every plot
+#### New:
+- Adding the option for rotate the axes X in bins
+- Adding The bad rate line reference in every plot
 
 ## Installation
 
