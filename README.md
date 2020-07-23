@@ -20,12 +20,7 @@ Its goal is to make the development of traditional credit risk scorecard model e
 
 ## Installation
 
-- Install the release version of `scorecardpy` from [PYPI](https://pypi.org/project/scorecardpy/) with:
-```
-pip install scorecardpy
-```
-
-- Install the latest version of `scorecardpy` from [github](https://github.com/williamberrios/scorecardpy) with:
+- Install the this version of `scorecardpy` from [github](https://github.com/williamberrios/scorecardpy) with:
 ```
 pip install git+git://github.com/williamberrios/scorecardpy.git
 ```
