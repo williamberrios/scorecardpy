@@ -1,4 +1,5 @@
 # scorecardpy
+# Original Verion from: https://github.com/ShichenXie/scorecardpy
 
 [![PyPI version](https://img.shields.io/pypi/pyversions/scorecardpy.svg)](https://pypi.python.org/pypi/scorecardpy)
 [![PyPI release](https://img.shields.io/pypi/v/scorecardpy.svg)](https://pypi.python.org/pypi/scorecardpy)
@@ -13,6 +14,9 @@ Its goal is to make the development of traditional credit risk scorecard model e
 - weight of evidence (woe) binning (`woebin`, `woebin_plot`, `woebin_adj`, `woebin_ply`)
 - scorecard scaling (`scorecard`, `scorecard_ply`)
 - performance evaluation (`perf_eva`, `perf_psi`)
+# New:
+# Adding the option for rotate the axes X in bins
+# Adding The bad rate line reference in every plot
 
 ## Installation
 
@@ -21,9 +25,9 @@ Its goal is to make the development of traditional credit risk scorecard model e
 pip install scorecardpy
 ```
 
-- Install the latest version of `scorecardpy` from [github](https://github.com/shichenxie/scorecardpy) with:
+- Install the latest version of `scorecardpy` from [github](https://github.com/williamberrios/scorecardpy) with:
 ```
-pip install git+git://github.com/shichenxie/scorecardpy.git
+pip install git+git://github.com/williamberrios/scorecardpy.git
 ```
 
 ## Example
