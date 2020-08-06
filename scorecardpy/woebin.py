@@ -989,7 +989,7 @@ def woebin(dt, y, x=None,
     if save_breaks_list is not None:
         bins_to_breaks(bins, dt, to_string=True, save_string=save_breaks_list)
     # return
-    return bins
+    return bins,breaks_list
 
 
 
