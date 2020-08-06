@@ -730,6 +730,7 @@ def woebin2(dtm, breaks=None, spl_val=None,
     # rbind binning_sv and binning
     binning = pd.concat(bin_list, keys=bin_list.keys()).reset_index()\
               .assign(is_sv = lambda x: x.level_0 =='binning_sv')
+    print(bin_list)
     # return
     return binning_format(binning)
 
